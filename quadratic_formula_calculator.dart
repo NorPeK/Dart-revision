@@ -5,6 +5,7 @@ void main() {
   int b = 10;
   int c = 2;
   int delta = deltaCalculator(a, b, c);
+  print("Delta is $delta");
   //double result = 0;
   if (delta > 0) {
     deltaBig(a, b, c);
@@ -17,7 +18,6 @@ void main() {
 
 int deltaCalculator(int a, int b, int c) {
   int delta = b * b - 4 * a * c;
-  print("Delta is $delta");
   return delta;
 }
 
