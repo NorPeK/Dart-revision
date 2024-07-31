@@ -1,3 +1,5 @@
+import 'dart:math';
+
 void main() {
   List names = ["NorPeK", "Wael", "Ahmed", "Osama", "Rami", "Abdo", "Ali"];
   List subList = names.sublist(
@@ -37,4 +39,7 @@ void main() {
   List namesStartsWithM =
       names.where((element) => element.startsWith("A")).toList();
   print(namesStartsWithM);
+
+  var lengthElement = names.map((element) => element.length);
+  print(lengthElement);
 }
