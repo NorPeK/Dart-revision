@@ -1,5 +1,5 @@
 void main() {
-  List names = ["NorPeK", "Wael", "Ahmed", "Osama", "Rami"];
+  List names = ["NorPeK", "Wael", "Ahmed", "Osama", "Rami", "Abdo", "Ali"];
   List subList = names.sublist(
       1); // take from the first list without deleting starting from wael.
   print(subList);
@@ -33,4 +33,8 @@ void main() {
     (element) => element.length > 4,
   );
   print(namesmap5);
+
+  List namesStartsWithM =
+      names.where((element) => element.startsWith("A")).toList();
+  print(namesStartsWithM);
 }
