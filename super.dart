@@ -1,5 +1,5 @@
 void main() {
-  Two two = new Two();
+  Two two = new Two("user");
   print(two.getVar);
 }
 
